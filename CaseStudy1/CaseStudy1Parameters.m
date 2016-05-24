@@ -320,7 +320,7 @@ AverageLoadData		=		...
     
 %% Generator data    
 
-%       BusID   P [MW]  RampTime [h]    c^{g1} [€/MWh]      c^{g2} [€/(MW^2*h)]       
+%       BusID   P [MW]  RampTime [h]    c^{g1} [euros/MWh]      c^{g2} [euros/(MW^2*h)]       
 GeneratorData		=		...
         [10		524		5               0.8512              0.000325;
         12		387		2           	4.006           	0.00207;
@@ -357,7 +357,7 @@ PVData		=		...
     
 %% Storage Data
 
-%       BusID   E [MWh]     A [MW]      eta_c [-]   eta_d [-]   c^{a1} [€/MWh]      c^{a2} [€/(MW^2*h)]          
+%       BusID   E [MWh]     A [MW]      eta_c [-]   eta_d [-]   c^{a1} [euros/MWh]      c^{a2} [euros/(MW^2*h)]          
 StorageData		=		...
         [12		4490		1423		0.92		0.92		0.2391              2.801E-5;
         17		2993		1138		0.97		0.97		0.2869              4.201E-5;
