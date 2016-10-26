@@ -1,0 +1,29 @@
+For each bus, we scale the load profile as follow:
+
+1) We normalize the yearly country consumption profile so that the mean of the yearly
+profile equals 1 [MW].
+2) We multiply this normalized profile by the bus consumption given in the 
+IEEE 118 bus test system. 
+3) We multiply the resulting profile by 1.2. 
+
+Note that "AverageLoadData"  in "CaseStudy1Parameters.m" corresponds to 120% of the 
+IEEE test system values.
+
+The PV plants are located at PV bus indicated in "CaseStudy1Parameters.m":
+8, 30, 49, 77, 92, 100.
+These PV plants receive the PV profiles from the following PV profile locations
+(i.e. the index of the first dimension of "ACPowerOutput.mat" and "ACPowerEnsembleForecast2013.mat"):
+4, 4, 6, 6, 3, 3.
+
+For each PV plant we normalize the PV output and forecast (using the same coefficient for both output
+and forecast, but different coefficients for different stations), so that the maximum PV output 
+is equal to 1 MW.
+Then, we scale these normalize profiles so that the maximum output values (for the time period 
+considered) are equal to: 
+2897, 4759, 4133, 4133, 2112, 2745.
+
+This scaling corresponds to a PV penetration of 44% (for the July-August period considered),
+and the location and size of each PV plant has been fine-tuned to prevent too large grid congestion. 
+
+
+contact: olivier.megel@gmail.com

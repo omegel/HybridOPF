@@ -1,0 +1,12 @@
+The load data are obtained from ENTSOE-E [1] for France, Germany, and Switzerland, for the year 2013.
+We assign the French profile to buses 1-39, the German profile to buses 40-78, and the Swiss
+profile to bus 79-118.
+
+
+The file "HourlyTimeVector2013.mat" include the time stamps for the simulation, in a convenient format. 
+
+
+[1] https://www.entsoe.eu/data/data-portal/consumption/Pages/default.aspx 
+
+
+Contact: olivier.megel@gmail.com
